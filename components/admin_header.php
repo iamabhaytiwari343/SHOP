@@ -10,13 +10,9 @@
       }
    }
 ?>
-
 <header class="header">
-
    <section class="flex">
-
       <a href="../admin/dashboard.php" class="logo">Admin<span>Panel</span></a>
-
       <nav class="navbar">
          <a href="../admin/dashboard.php">home</a>
          <a href="../admin/products.php">products</a>
@@ -25,12 +21,10 @@
          <a href="../admin/users_accounts.php">users</a>
          <a href="../admin/messages.php">messages</a>
       </nav>
-
       <div class="icons">
          <div id="menu-btn" class="fas fa-bars"></div>
          <div id="user-btn" class="fas fa-user"></div>
       </div>
-
       <div class="profile">
          <?php
             $select_profile = $conn->prepare("SELECT * FROM `admins` WHERE id = ?");
@@ -45,7 +39,5 @@
          </div>
          <a href="../components/admin_logout.php" class="delete-btn" onclick="return confirm('logout from the website?');">logout</a> 
       </div>
-
    </section>
-
 </header>
